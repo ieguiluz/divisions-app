@@ -1,20 +1,38 @@
 @import '~antd/dist/antd.less';
+@import './assets/css/variables.less';
 
 .site-layout-content {
+  background: @white;
   min-height: 280px;
-  padding: 24px;
-  background: #fff;
 }
 
-#components-layout-demo-top .logo {
-  float: left;
-  width: 120px;
-  height: 31px;
-  margin: 16px 24px 16px 0;
-  background: rgba(255, 255, 255, 0.3);
+.ant-layout {
+  .ant-layout-footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 24px 20px;
+
+    a {
+      margin-left: 3px;
+    }
+  }
 }
 
-.ant-row-rtl #components-layout-demo-top .logo {
-  float: right;
-  margin: 16px 0 16px 24px;
+.ant-menu {
+  background: transparent;
+}
+
+.ant-tabs-top {
+  .ant-tabs-nav {
+    margin: 0;
+  }
+}
+
+.ant-tabs-content-holder {
+  background-color: @gray-2;
+  padding: 16px 32px 0;
+}
+
+.ant-tabs-nav-wrap {
+  padding: 0 20px;
 }

@@ -1,0 +1,41 @@
+@import '../../assets/css/variables.less';
+
+.logo {
+  background: @blue-2;
+  float: left;
+  height: 31px;
+  margin: 16px 24px 16px 0;
+  width: 120px;
+}
+
+.ant-layout {
+  .ant-layout-header {
+    background: @blue;
+    background: linear-gradient(90deg, @blue 0%, @blue-2 100%, @white 100%);
+    padding: 0 20px;
+
+    .ant-menu {
+      .ant-menu-item {
+        color: @white;
+        font-size: 14px;
+        font-weight: 400;
+
+        &-selected {
+          font-weight: 700;
+        }
+      }
+
+      &-submenu {
+        color: @white;
+
+        .ant-menu-submenu-title {
+          &:hover {
+            color: @white;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}
+
